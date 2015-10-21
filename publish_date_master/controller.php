@@ -1,5 +1,5 @@
 <?php 
-namespace Concrete\Package\ElegantRestrictByPublicDate;
+namespace Concrete\Package\PublishDateMaster;
 
 defined('C5_EXECUTE') or die('Access Denied.');
 
@@ -16,18 +16,18 @@ use \Concrete\Core\Permission\Duration as PermissionDuration;
 class Controller extends Package
 {
 
-    protected $pkgHandle = 'elegant_restrict_by_public_date';
+    protected $pkgHandle = 'publish_date_master';
     protected $appVersionRequired = '5.7.1';
     protected $pkgVersion = '1.0.0';
 
     public function getPackageDescription()
     {
-        return t("Uses permissions to restrict access until the public date.");
+        return t("Restricts access to pages until their public date.");
     }
 
     public function getPackageName()
     {
-        return t('Elegant Restrict By Public Date');
+        return t('Publish Date Master');
     }
 
     public function on_start()
@@ -72,6 +72,5 @@ class Controller extends Package
     {
         $pkg = parent::install();
 
-    }
-
+    }cd ..
 }
