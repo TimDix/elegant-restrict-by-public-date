@@ -72,5 +72,5 @@ class Controller extends Package
     {
         $pkg = parent::install();
 
-    }cd ..
+    }
 }
